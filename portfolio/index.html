@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- For icons in Website -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- For title of the Website -->
+    <title>Ananya Sharma Portfolio</title>
+
+    <!-- For CSS Connection -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- For logo in Website -->
+    <link rel="icon" href="image/Brand.jpg" type="image/x-icon">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- For typed in Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<body>
+    
+<!-- Home portion -->
+    <div class="header">
+        <div class="container">
+            <nav>
+                <h1><span class="span">Ana</span><span class="span1">nya</span></h1>
+                <ul id="sidemenu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Key-Skills">Key-Skills</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-table" id="Home">
+               <div class="table">
+                    <div class="tr">
+                       <div class="td-left">
+                            <p><span class="writing"></span></p>
+                            <h1>Hi, I'm <span class="h">Ananya</span> Sharma from India.</h1>
+                       </div>
+                        <div class="td-right"><img src="ProfileImg.jpeg" class="image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- About ME portion -->
+    <div class="about" id="About">
+        <div class="container">
+            <div class="row">
+                <div class="column1">
+                    <img src="ProfileImg.jpeg" alt="not available" class="column1">
+                </div>
+                <div class="column2">
+                    <h1 class="heading">About <span class="Me">Me</span></h1>
+                    <p>Hi, I'am Ananya Sharma, I am from Jammu And Kashmir. <br>I had done my Graduation from Fr. Conceicao Rodrigues college of Engineering in Mumbai.<br>Currently fresher, Seeking position to utilize my skills and abilities in the information technology industry that offer professional growth while being 
+                        resourceful, innovative and flexible.<br>And Ability to complete tasks on time Optimzed website performance by using web development tools and techniques like caching, minification, and concatenation</p>
+                    <div class="important">
+                        <p class="about_me_nav current" onclick="openthis('skills')">Internships</p>
+                        <p class="about_me_nav" onclick="openthis('internships')">Projects</p>
+                        <p class="about_me_nav" onclick="openthis('education')">Education</p>
+                    </div>
+                    <div class="about_me_detail my" id="skills">
+                        <ul>
+                            <li><span>CodSoft</span><br>In this Internship program, I create a Dynamic as well as Static Website like Portfolio, Landing Page, Calculator.</li>
+                            <li><span>The Sparks Foundation</span><br>Basic Banking system: Built a web application as a task which allows user to transfer amount in pre-existing users. Users are 
+                                the already existing dummy values that are generated using SQL database.</li>
+                        </ul>
+                    </div>
+                    <div class="about_me_detail" id="internships">
+                        <ul>
+                            <li><span>FARMERS ASSISTENCE APPLICATION</span><br>➢ Built a reliable model that estimates crop sustainability in a given state under specific climatic and soil 
+                                conditions. Give advice on the best crop to grow in the area and also suggest fertilizers for the crops with supported 
+                                chemical properties. Overall system was divided into 3 models: Crop recommender, Fertilizer Recommender and Disease Detector.
+                                </li>
+                            <li><span>HEALTH MONITORING SYSTEM</span><br>➢ Built an IOT based project to detect the presence of a passer-by using ultrasonic sensor, screen the body 
+                                temperature, blood oxygen parameter and pulse rate of the individual using designated sensors to help identify any signs of 
+                                individual health risks. Used the required drivers in the nodemcu to use the sensors and then displayed the result on a small 
+                                oled screen.</li>
+                            <li><span>EDIBLE PLANT RECOGNITION</span><br>➢ Built a Machine learning based project. Used various models such as SVM, CNN, Random Forest. This project is built to 
+                                provide the verification (i.e. edible/inedible) of plants and uses of the plant using an image provided by the user.</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about_me_detail" id="education">
+                        <ul>
+                            <li><span>Bachelors in Engineering(B.E)</span><br>Fr. Conceicao rodrigues college of Engineering<strong>(2019-2023)</strong><br>CGPA: <span>8.34/10</span></li>
+                            <li><span>Senior Secondary(12th), Science</span><br>Shiksha Niketan School <strong>(JKBOSE)</strong><br>Year of Completion: <span>2019</span><br>Percentage: <span>80.2%</span>
+                            </li>
+                            <li><span>Secondary(10th)</span><br>Shiksha Niketan School<strong>(JKBOSE)</strong><br>Year of Completion: <span>2017</span><br>Percentage: <span>78.6%</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Key-Skills portion -->
+    <div class="Key-Skills" id="Key-Skills">
+        <div class="myskills">
+            <h1 class="title"><span class="Me">My Skills</span></h1>
+            <div class="skills">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences</div>
+                    <p>Hi, I'am Ananya Sharma, I am from Jammu And Kashmir. <br>I have many skills and some experience in Techical field .<br> Currently, I am purseving Training & Internship from CodSoft.<br> Seeking position to utilize my skills and abilities in the information technology industry that offer professional growth while being 
+                        resourceful, innovative and flexible.<br> Ability to complete tasks on time Optimzed website performance by using web development tools and techniques like caching, minification, and concatenation.<br>
+                    On the right hand side bars shows my graph and ability in different fields/languages.</p>
+                    <a href="#" class="readme">Read more</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="information">
+                            <span>HTML</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line c"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>Java</span>
+                            <span>60%</span>
+                        </div>
+                         <div class="line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>CSS</span>
+                            <span>80%</span>
+                        </div>
+                         <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>JS</span>
+                            <span>55%</span>
+                        </div>
+                         <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>PHP</span>
+                            <span>50%</span>
+                        </div>
+                         <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>C/C++</span>
+                            <span>60%</span>
+                        </div>
+                         <div class="line dsa"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>SQL</span>
+                            <span>90%</span>
+                        </div>
+                         <div class="line sql"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>OS</span>
+                            <span>70%</span>
+                        </div>
+                         <div class="line os"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>Machine Learning</span>
+                            <span>90%</span>
+                        </div>
+                         <div class="line se"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>DBMS</span>
+                            <span>70%</span>
+                        </div>
+                         <div class="line dbms"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>OOPs</span>
+                            <span>80%</span>
+                        </div>
+                         <div class="line oops"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Contact Me Portion-->
+    <div class="Contact" id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title1">Contact <span class="Me">Me</span></h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> ananya.sharma2401@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> XXXXXXXXXX</p>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/ananya-sharma-21aa17216/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ananyasharma2401"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Ananya_B.Tech_Resume.pdf" download class="btn btn1">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name = "submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn1">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Ananya. Made with <i class="fas fa-heart"></i> by Ananya Sharma</p>
+        </div>
+    </div> 
+
+<!-- Javascript Connection  -->
+    <script type="text/Javascript" src="script.js"></script>
+</body>
+</html>
